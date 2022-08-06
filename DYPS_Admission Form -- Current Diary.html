@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0064)http://www.currentdiary.com/app-for-school/admission-form-print/ -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./DYPS_Admission Form -- Current Diary_files/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Admission Form -- Current Diary</title>
+    <style>
+      body {
+        margin: 0;
+        /* font-family: 'Merriweather', serif; */
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+      input {
+        border: none;
+        border-bottom: 1px dotted;
+      }
+      #fillPart {
+        font-size: 1rem;
+        margin: 3rem 10rem;
+        border: 2px solid black;
+        padding: 50px 70px 50px 50px;
+        width: 80%;
+        background-color: #faf7f0;
+        position: relative;
+      }
+      
+      .logo{
+        text-align: center;
+        width: 8rem;
+        height: auto;
+      }
+      .H_1 {
+        font-family: 'Alice', serif;
+      font-weight: 600; 
+      font-size: 2.5rem;     }
+      .H_1 span{        font-family: 'Alice', serif;
+}
+      .admission{
+        background: green;
+        color: #fff;
+         font-size: 19px;
+          padding: 5px ;
+         border-radius: 6px;
+         font-family: 'Alice', serif;
+         padding: 5px 35px;
+         font-weight: 500;
+      }
+
+      .photoBox{
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      ol li {
+        margin-left: -40px;
+        margin-top: 0.5rem;
+      }
+      ol li ol li {
+        margin-left: 0;
+      }
+      hr {
+        border: 1px solid black;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+    </style>
+    <script>
+      Filevalidation = () => {
+        const fi = document.getElementById("upl_file");
+        // Check if any file is selected.
+        if (fi.files.length > 0) {
+          for (const i = 0; i <= fi.files.length - 1; i++) {
+            const fsize = fi.files.item(i).size;
+            const file = Math.round(fsize / 1024);
+            // The size of the file.
+            if (file >= 300) {
+              alert("File too Big, please select a file less than 300KB");
+            } else {
+              document.getElementById("size").innerHTML =
+                "<b>" + file + "</b> KB";
+            }
+          }
+        }
+      };
+
+      Filevalidation2 = () => {
+        const fi = document.getElementById("mother_image");
+        // Check if any file is selected.
+        if (fi.files.length > 0) {
+          for (const i = 0; i <= fi.files.length - 1; i++) {
+            const fsize = fi.files.item(i).size;
+            const file = Math.round(fsize / 1024);
+            // The size of the file.
+            if (file >= 300) {
+              alert("File too Big, please select a file less than 300KB");
+            } else {
+              document.getElementById("size").innerHTML =
+                "<b>" + file + "</b> KB";
+            }
+          }
+        }
+      };
+
+      Filevalidation3 = () => {
+        const fi = document.getElementById("father_image");
+        // Check if any file is selected.
+        if (fi.files.length > 0) {
+          for (const i = 0; i <= fi.files.length - 1; i++) {
+            const fsize = fi.files.item(i).size;
+            const file = Math.round(fsize / 1024);
+            // The size of the file.
+            if (file >= 300) {
+              alert("File too Big, please select a file less than 300KB");
+            } else {
+              document.getElementById("size").innerHTML =
+                "<b>" + file + "</b> KB";
+            }
+          }
+        }
+      };
+
+      Filevalidation4 = () => {
+        const fi = document.getElementById("signature_image");
+        // Check if any file is selected.
+        if (fi.files.length > 0) {
+          for (const i = 0; i <= fi.files.length - 1; i++) {
+            const fsize = fi.files.item(i).size;
+            const file = Math.round(fsize / 1024);
+            // The size of the file.
+            if (file >= 300) {
+              alert("File too Big, please select a file less than 300KB");
+            } else {
+              document.getElementById("size").innerHTML =
+                "<b>" + file + "</b> KB";
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+
+  <body
+    background="./DYPS_Admission Form -- Current Diary_files/saved_resource"
+  >
+    <div bgcolor="#e0ffff" id="fillPart">
+      
+      <!--Header start here-->
+      <div>
+       <div class="row text-center">
+         <div class="col m-2">
+          <img src="Screenshot_1.png" class="logo"/>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center mt-2">
+              <h3 class="H_1">Bharatam World School</h3>
+              <span>concieve</span>&nbsp;|&nbsp;<span>&nbsp;believe&nbsp;</span>&nbsp;|&nbsp;<span>achieve</span> 
+              <div class="row">
+                <div class="col mt-3"><span class="mt-4 admission">Admission Form</span></div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="photoBox">
+                <!-- poto section  -->
+      
+                <img height="120" width="120" alt="Photograph" />
+                <!-- <input type="file" id="upl_file" name="upl_file" onchange="Filevalidation()"> -->
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--Header Ends here-->
+
+        
+        <font size="3">
+         
+
+          <br />
+          <br />
+          <br />
+
+          <ol>
+            <li>
+              Name of the Pupil<input
+                type="text"
+                size="30%"
+                name="firstname"
+                required=""
+              />
+              Registration No.<input
+                type="text"
+                size="30%"
+                name="firstname"
+                required=""
+              />
+            </li>
+            <br />
+            <li>
+              Date of Birth <input type="text" size="20%" name="dob" />Place of
+              Birth <input type="text" size="20%" name="dob" /> Gender Male
+              <input type="checkbox" name="gender" value="Male" />
+              Female<input type="checkbox" name="gender" value="Female" />
+            </li>
+            <br />
+            <li>
+              Religion<input
+                type="text"
+                size="33%"
+                name="firstname"
+                required=""
+              />Nationality<input
+                type="text"
+                size="40%"
+                name="firstname"
+                required=""
+              />
+            </li>
+            <br />
+            <li>
+              Name of the School Last Attended<input
+                type="text"
+                size="64%"
+                name="firstname"
+                required=""
+              />
+            </li>
+            <br />
+            <li>
+              Class
+              <input type="text" size="20%" name="firstname" required="" /> Year
+              <input type="text" size="20%" name="firstname" required="" />
+              &nbsp;Board
+              <input type="text" size="30%" name="firstname" required="" />
+            </li>
+            <br />
+            <li>
+              Admission Granted in Class
+              <input type="text" size="30%" name="firstname" required="" />
+              &nbsp;Year
+              <input type="text" size="30%" name="firstname" required="" />
+            </li>
+            <br />
+            <li>
+              Father's Name
+              <input
+                type="text"
+                size="20%"
+                name="firstname"
+                required=""
+              />Educational Qualification<input
+                type="text"
+                size="15%"
+                name="firstname"
+                required=""
+              />Profession<input
+                type="text"
+                size="10%"
+                name="firstname"
+                required=""
+              />
+            </li>
+            <br />
+            <li>
+              Mother's Name<input
+                type="text"
+                size="20%"
+                name="firstname"
+                required=""
+              />Educational Qualification<input
+                type="text"
+                size="15%"
+                name="firstname"
+                required=""
+              />Profession<input
+                type="text"
+                size="10%"
+                name="firstname"
+                required=""
+              />
+            </li>
+            <br />
+            <li>
+              Address<input
+                type="text"
+                size="85%"
+                name="firstname"
+                required=""
+              />
+            </li>
+            <br />
+            <li>
+              Correspondence Address &nbsp;<input
+                type="text"
+                size="70%"
+                name="firstname"
+                required=""
+              />
+            </li>
+            <br />
+            <li>
+              Telephone No. with Code
+              <input
+                type="text"
+                size="30%"
+                name="firstname"
+                required=""
+              />Office
+              <input type="text" size="32%" name="firstname" required="" />
+            </li>
+            <br />
+            <li>
+              Mobile No.
+              <input
+                type="text"
+                size="35%"
+                name="firstname"
+                required=""
+              />&nbsp;&nbsp;E-mail
+              <input type="text" size="37%" name="firstname" required="" />
+            </li>
+
+            <br />
+            <li>
+              <b> Details of Brother and Sister</b>
+              <br />
+
+              <br />
+              1. Name
+              <input type="text" size="45%" name="firstname" required="" />
+              &nbsp;&nbsp;Age
+              <input type="text" size="32%" name="firstname" required="" />
+              <br />
+              2. Name
+              <input type="text" size="45%" name="firstname" required="" />
+              &nbsp;&nbsp;Age
+              <input type="text" size="32%" name="firstname" required="" />
+              <br />
+            </li>
+
+            <br />
+            <li>
+              <b> Brother and Sister studying in this school</b>
+              <br />
+
+              <br />
+              1. Name
+              <input type="text" size="45%" name="firstname" required="" />
+              &nbsp;&nbsp;Age
+              <input type="text" size="32%" name="firstname" required="" />
+              <br />
+              2. Name
+              <input type="text" size="45%" name="firstname" required="" />
+              &nbsp;&nbsp;Age
+              <input type="text" size="32%" name="firstname" required="" />
+              <br />
+            </li>
+
+            <br />
+            <li>
+              <b> References (Name, Address &amp; Contact Details)</b>
+              <br />
+
+              <br />
+              1. <input type="text" size="90%" name="firstname" required="" />
+              <br />
+              2. <input type="text" size="90%" name="firstname" required="" />
+            </li>
+          </ol>
+        </font>
+      </form>
+    </div>
+    <font size="3">
+      <!-- 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+
+<div bgcolor="lightcyan">
+<form method="post" action="" enctype="multipart/form-data" accept-charset="UTF-8">
+        <input type='hidden' name='csrfmiddlewaretoken' value='mCQmJZajnD4f3rtYQUjWcPTJU4HHF4VfY0upB528SQnzWWOvK6EiNP2tIGWJ3X1e' />
+
+<div>
+<div>
+<div style="margin-left:2%">
+<font face="arial black" color="black" size="6"><center>ADMISSION FORM</center></font><div>
+<div style="margin-left:80%"><img alt="Image" height="100" width="80" alt="Photograph of the student with Mother/Father jointly" name="upl_file">
+</div></div><br></div><br>
+<font size="3">
+Class in which admission is sought for : <input type="text" size="5%" name="sought_class">      Session <input type="text" size="10%" name="session" value="2019-2020"><br>1. (a) Full name of the Child(in capital letters):<input type="text" size="50%" name="firstname"><br>
+    (b)Adhar card no <input type="text" size="20%" name="studentaadhaar"> <br>     (c) 
+Sex 
+    
+    Male
+<input type="checkbox" name = "gender" value="Male">
+    
+    Female<input type="checkbox" name="cb2" value=" "><br>
+2. Date of Birth      Day <input type="text" size="5%" name="day"> Month <input type="text" size="5%" name="month"> Year <input type="text" size="5%"  name="year"><br>      In words <input type="text" size="70%" name="dobyears"><br>     Age of the student as on 31st March:      Year <input type="text" size="5%"> Month <input type="text" size="5%">Day <input type="text" size="5%"><br> 3. Blood Group of the child<input type="text" size="10%" name="bloodgroup"><br>
+4. Do you belong to Gen./SC/ST/OBC/EWS/Disabled/S.<wbr>G. Child attach certificate if applicable.<br>
+    Gen. <input type="checkbox" name="fatherofficeemail" value="General">    SC <input type="checkbox" name="fatherofficeemail" value="SC">    ST <input type="checkbox" name="fatherofficeemail" value="ST">    OBC <input type="checkbox" name="fatherofficeemail" value="OBC">    EWS <input type="checkbox" name="fatherofficeemail" value="EWS">    Disabled <input type="checkbox" name="fatherofficeemail" value="Disabled">S.G. Child <input type="checkbox" name="fatherofficeemail" value="S.G. Child"><br>
+5. Details of th Parents-
+<table border="1">
+<tr>
+<td>Details of Mother/Father</td>
+<td>Mother with Aadhar Card No.</td> 
+<td>Father with Aadhar Card No.</td>
+</tr>
+<tr> 
+<td>(i)Name (in capital letters)</td>
+<td><input type="text" size="35%" name="mother"></td> 
+<td><input type="text" size="35%" name="father"></td> 
+</tr>
+<tr> 
+<td>(ii)Aadhaar Number</td>
+<td><input type="text" size="35%" name="motheraadhaar"></td> 
+<td><input type="text" size="35%" name="fatheraadhaar"></td> 
+</tr>
+<tr> 
+<td>(iii)Nationality</td>
+<td><input type="text" size="35%" name="mothernationality"></td> 
+<td><input type="text" size="35%" name="fathernationality"></td> 
+</tr>
+<tr> 
+<td>(iv)Occupation</td>
+<td><input type="text" size="35%" name="motheroccupation"></td> 
+<td><input type="text" size="35%" name="fatheroccupation"></td> 
+</tr>
+<tr> 
+<td>(v)Name of the office &amp; full address with Telephone No.</td>
+<td><input type="text" size="35%" name="motheroffice"></td> 
+<td><input type="text" size="35%" name="fatheroffice"></td> 
+</tr>
+<tr> 
+<td>(vi)Full residential address with Tele No.</td>
+<td><input type="text" size="35%" name="resiaddress"></td> 
+<td><input type="text" size="35%" name="officeaddress"></td> 
+</tr>
+<tr> 
+<td>(v)Annual Income</td>
+<td><input type="text" size="35%" name="motherincome"></td> 
+<td><input type="text" size="35%" name="fatherincome"></td> 
+</tr>
+</table>
+6. Name &amp; address of local guardian (if any)<input type="text" size="63%" name="guardianaddress"><br>
+7. Name &amp; address of the previous school with Class <input type="text" size="55%" name="schoolingfrome"><br>
+8. No. &amp; date of T.C issued by previous school with status of result <input type="text" size="42%" name="fax"><br>
+9. Whether previous school was affiliated with CBSE:(Yes/No)<input type="text" size="5%" name="fax"><br>
+10. If, the previous school was not affiliated with CBSE, specify name of the Board <input type="text" size="28%" name="fax"><br>
+11. (a)Result of previous examination:<input type="text" size="10%" name="fax">(b) Percentage<input type="text" size="10%" name="fax"><br>
+12. Subjects proposed to offer: 1. <input type="text" size="20%" name="siblingage1"> 2. <input type="text" size="20%" name="siblingage2"> 3. <input type="text" size="20%" name="schoolingclass"><br> 4. <input type="text" size="20%" name="schoolingclasse"> 5. <input type="text" size="20%" name="schoolingsince"> 6. <input type="text" size="20%" name="schoolingsincee"><br>
+13. Whether school has the approval of the Board to offer this subject. <input type="text" size="20%" name="status"><br>
+14. Whether the transfer certificate is attached: YES/NO <input type="text" size="20%" name="fax"><br>
+15. Mother tongue: <input type="text" size="20%" name="mothertongue"> Home town <input type="text" size="20%" name="languagehome"><br><br><br>
+<b><center>DECLARATION BY THE PARENTS</center></b><br>
+I hereby declare that the above information furnished by me is correct to the best of my knowledge &amp; belief, if any
+information or documents supplied by me found to be incorrect, I will be responsible for the same. I shall abide by the rules of the Vidyalaya.<br><br><br>
+Date:<input type="text" size="10%">                               <wbr>                              <wbr>                              <wbr>                      
+Signature of Parents
+<br>
+<br><br>
+<b><u><center>FOR THE OFFICE USE ONLY</center></u></b><br>
+1. Certified that I have checked the application form and the relevant papers are found in order.<br><br><br>
+                              <wbr>                              <wbr>                              <wbr>                              <wbr>         
+Admission Incharge<br><br>
+2. Please admit to Class<input type="text" size="10%" name="referrencename1"> Section<input type="text" size="10%" name="referrencedesig1">after checking the relevant papers and realise the dues.<br><br><br>
+Date:<input type="text" size="10%" name="referrencetel1">                         <wbr>                              <wbr>                              <wbr>                           
+Principal<br>
+<hr>
+Admitted to Class<input type="text" size="10%" name="referrenceaddress1">Section<input type="text" size="10%" name="referrencecity1">Fee Receipt No<input type="text" size="10%" name="referrencepin1"><br>
+Dated <input type="text" size="10%" name="referrencename2"> issued.<br>
+Details of amount received: <br>
+Admission Fee <input type="text" size="10%" name="referrencedesig2"><br>
+Tution Fee <input type="text" size="10%" name="referrencetel2"><br>
+Any other Fee  <input type="text" size="10%" name="referrenceaddress2"><br>
+Computer Fee<input type="text" size="10%" name="referrencecity2"><br>
+Total <input type="text" size="10%" name="amount"><br>
+Name has been entered in the Class Attendance Reegister: Yes <input type="text" size="5%"> No <input type="text" size="5%"> <br><br>
+Certified that all the entries have been made in the Scholar&#39;s Register and the dues have been received.<br><br>
+Registration No. of the student in Admission Withdrawl Register is<input type="text" size="10%">Vol<input type="text" size="10%"><br><br>
+Date:<input type="text" size="10%">                         <wbr>                              <wbr>                              <wbr>                           
+Office Suptd.<br>
+<hr>
+Admission considered by the school is in accordance with the provisions of the Board &amp; approved.<br><br>
+Date:<input type="text" size="10%">                         <wbr>                              <wbr>                              <wbr>                           
+Sign. of Principal/Official Seal
+</font>
+
+<br><br>
+<button class="submitbtn">Click To Print This Form and allot this Admission No</button>
+</form>
+
+</div></div> 
+</div></body></html> --></font
+    >
+  </body>
+</html>

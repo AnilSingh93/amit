@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Lora-Regular;
+  src: url(Lora-Regular.ttf);
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header{
+	width: 100%;
+    background: #A83230;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header:after{
+	content: "";
+    width: 100%;
+    height: 9px;
+    background: #A83230;
+    bottom: -20px;
+    position: absolute;
+    z-index: -1;
+}
+header img{
+	max-width: 150px;
+	position: absolute;
+	bottom: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.details-main{
+	text-align: center;
+    padding-top: 70px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+}
+.name-details h1{
+	font-size: 40px;
+	font-family: Lora-Regular;
+	color: #A83230;
+}
+.slogan{
+	font-size: 20px;
+    font-family: 'Lora-Regular';
+    margin: 10px 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.admission{
+	background: #A83230;
+    max-width: 300px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 4px;
+    font-size: 22px;
+    font-family: serif;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.5px;
+    position: relative;
+   }
+
+   .admission:after{
+   	content: '';
+	background: #A83230;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+   }
+   .admission:before{
+   	content: '';
+	background: #A83230;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+   }
+
+  .photograph{
+    height: 200px;
+    width: 160px;
+    position: absolute;
+    border: 1px solid #A83230;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    right: 80px;
+  }
+
+form{
+	margin-top: 50px;
+}
+  ol{
+  	list-style: none;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #000;
+  }
+  ol li{
+  	    width: 100%;
+    font-size: 16px;
+    font-family: 'Lora-Regular';
+  }
+  input{
+  	border: unset;
+    border-bottom: 2px dotted;
+    outline: none;
+    box-shadow: unset;
+        font-size: 14px;
+    font-family: 'Lora-Regular';
+    padding: 0 2px;
+  }
+ 
+
+input[type="checkbox"] {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #D1C277;
+	background-clip: content-box;
+	padding: 3px;
+	position: relative;
+    top: 3px;
+    left: 9px;
+}
+
+input[type="checkbox"]:checked {
+	background-color: #555555;
+}
